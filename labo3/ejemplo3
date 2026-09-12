@@ -1,0 +1,58 @@
+#include <stdint.h>
+#include <stdbool.h>
+#include "inc/hw_memmap.h"
+#include "driverlib/debug.h"
+#include "driverlib/gpio.h"
+#include "driverlib/sysctl.h"
+
+#ifdef DEBUG
+void
+__error__(char *pcFilename, uint32_t ui32Line)
+{
+    while(1);
+}
+#endif
+
+int
+main(void)
+{
+    // Configuración del reloj a 120 MHz
+    SysCtlClockFreqSet((SYSCTL_XTAL_25MHZ | SYSCTL_OSC_MAIN | SYSCTL_USE_PLL | SYSCTL_CFG_VCO_480), 120000000);
+
+    // Habilita el puerto N (para el LED) y el puerto J (para el switch)
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPION);
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOJ);
+
+    // Espera a que ambos puertos estén listos
+    while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPION))
+    {
+    }
+    while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOJ))
+    {
+    }
+
+    // Configura el pin PN1 como salida (LED)
+    GPIOPinTypeGPIOOutput(GPIO_PORTN_BASE, GPIO_PIN_1);
+
+    // Configura el pin PJ1 como entrada (Switch)
+    GPIOPinTypeGPIOInput(GPIO_PORTJ_BASE, GPIO_PIN_1);
+    
+    // Habilita la resistencia Pull-Up interna para el switch PJ1
+    GPIOPadConfigSet(GPIO_PORTJ_BASE, GPIO_PIN_1, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPU);
+
+    while(1)
+    {
+        // Lee el estado del pin PJ1
+        // Con la resistencia Pull-Up, el pin lee 0 cuando se presiona el botón
+        if(GPIOPinRead(GPIO_PORTJ_BASE, GPIO_PIN_1) == 0)
+        {
+            // El botón está presionado: Enciende el LED PN1
+            GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, GPIO_PIN_1);
+        }
+        else
+        {
+            // El botón no está presionado: Apaga el LED PN1
+            GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, 0x0);
+        }
+    }
+}

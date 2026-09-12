@@ -1,0 +1,100 @@
+#include <stdint.h>
+#include <stdbool.h>
+#include "inc/hw_memmap.h"
+#include "driverlib/debug.h"
+#include "driverlib/gpio.h"
+#include "driverlib/sysctl.h"
+
+#ifdef DEBUG
+void
+__error__(char *pcFilename, uint32_t ui32Line)
+{
+    while(1);
+}
+#endif
+
+int
+main(void)
+{
+    uint8_t nivel = 0;//este era como un int mejorado para embebidos entonces lo que hacemos es que introduciomos como varaible a lo demas 
+
+    SysCtlClockFreqSet((SYSCTL_XTAL_25MHZ | SYSCTL_OSC_MAIN | SYSCTL_USE_PLL | SYSCTL_CFG_VCO_480), 120000000);
+
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPION);
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOJ);
+
+    while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPION)) {}
+    while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOF)) {}
+    while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOJ)) {}
+
+    GPIOPinTypeGPIOOutput(GPIO_PORTN_BASE, GPIO_PIN_1);
+    GPIOPinTypeGPIOOutput(GPIO_PORTN_BASE, GPIO_PIN_0);
+    GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_4);
+    GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_0);
+
+    GPIOPinTypeGPIOInput(GPIO_PORTJ_BASE, GPIO_PIN_0);
+    GPIOPinTypeGPIOInput(GPIO_PORTJ_BASE, GPIO_PIN_1);
+    GPIOPadConfigSet(GPIO_PORTJ_BASE, GPIO_PIN_0, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPU);
+    GPIOPadConfigSet(GPIO_PORTJ_BASE, GPIO_PIN_1, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPU);
+
+    while(1)
+    {
+        // Botón 1 (PJ0): Asciende
+        if(GPIOPinRead(GPIO_PORTJ_BASE, GPIO_PIN_0) == 0)
+        {
+            if(nivel < 4) {
+                nivel = nivel + 1;
+            }
+            while(GPIOPinRead(GPIO_PORTJ_BASE, GPIO_PIN_0) == 0) {}
+            SysCtlDelay(2000000);
+        }
+        
+        // Botón 2 (PJ1): Desciende
+        if(GPIOPinRead(GPIO_PORTJ_BASE, GPIO_PIN_1) == 0)
+        {
+            if(nivel > 0) {
+                nivel = nivel - 1;
+            }
+            while(GPIOPinRead(GPIO_PORTJ_BASE, GPIO_PIN_1) == 0) {}
+            SysCtlDelay(2000000);
+        }
+
+        // Orden de LEDs: PN1, PN0, PF4, PF0
+        if(nivel == 0)
+        {
+            GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, 0x0);
+            GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, 0x0);
+            GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_4, 0x0);
+            GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_0, 0x0);
+        }
+        else if(nivel == 1)
+        {
+            GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, GPIO_PIN_1);
+            GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, 0x0);
+            GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_4, 0x0);
+            GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_0, 0x0);
+        }
+        else if(nivel == 2)
+        {
+            GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, GPIO_PIN_1);
+            GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, GPIO_PIN_0);
+            GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_4, 0x0);
+            GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_0, 0x0);
+        }
+        else if(nivel == 3)
+        {
+            GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, GPIO_PIN_1);
+            GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, GPIO_PIN_0);
+            GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_4, GPIO_PIN_4);
+            GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_0, 0x0);
+        }
+        else if(nivel == 4)
+        {
+            GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, GPIO_PIN_1);
+            GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, GPIO_PIN_0);
+            GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_4, GPIO_PIN_4);
+            GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_0, GPIO_PIN_0);
+        }
+    }
+}

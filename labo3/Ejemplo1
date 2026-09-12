@@ -1,0 +1,60 @@
+#include <stdint.h>
+#include <stdbool.h>
+#include "inc/hw_memmap.h"
+#include "driverlib/debug.h"
+#include "driverlib/gpio.h"
+#include "driverlib/sysctl.h"
+
+#ifdef DEBUG
+void //bucle anti errores
+__error__(char *pcFilename, uint32_t ui32Line)
+{
+    while(1);
+}
+#endif
+
+int
+main(void)
+{
+    SysCtlClockFreqSet((SYSCTL_XTAL_25MHZ | SYSCTL_OSC_MAIN | SYSCTL_USE_PLL | SYSCTL_CFG_VCO_480), 120000000); //encendido de el clock 
+
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPION);//enecendido de el puerto N y su abilitacion del clock 
+
+    while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPION))
+    {
+    }
+
+    // Configura cada pin en su propia línea
+    GPIOPinTypeGPIOOutput(GPIO_PORTN_BASE, GPIO_PIN_0); //habilita los puertos 1 y 0 ademas los sale en modo salida envia voltaje para afuera 
+    GPIOPinTypeGPIOOutput(GPIO_PORTN_BASE, GPIO_PIN_1);
+
+    //GPIOPinTypeGPIOInput(GPIO_PORTJ_BASE, GPIO_PIN_0); //en todo caso esto es modo de entrada 
+    //GPIOPadConfigSet(GPIO_PORTJ_BASE, GPIO_PIN_0, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPU);//esta linea de codigo lo que hace es que configura a mi gpio en momdo entrada entonces un boton necesita 
+    //este lo que hace entonces como esta en modo entrada puede estar en pull up o en modo pull down entonces como se cual es cual etnocens veo y digo 	que esta linea es la que hace eso GPIO_PIN_TYPE_STD_WPU
+    //en modo pull up es ese ahora para modo pull down _WPU y _WPD entonces quedaria asi  GPIO_PIN_TYPE_STD_WPD
+
+
+
+    while(1)//todo dentro del bucle de accion 
+    {
+        // 1. Enciende el LED PN0
+        GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, GPIO_PIN_0);//quiero que  habilites o enciendas el puerto 0 en modo gpio y que su estado sea modo on o encendido del gpio 0
+        
+        SysCtlDelay(40000000);//es como un hal delay espera 
+
+        // 2. Enciende el LED PN1 (el PN0 sigue encendido porque no le hemos dicho que se apague)
+        GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, GPIO_PIN_1);//enciende el pin 1 y lo pone en on se activa 
+        
+        SysCtlDelay(40000000);//espera
+
+        // 3. Apaga cada LED en su propia línea
+        GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, 0x0);//quiero que habilites el pin 0 y 1 y ademas de eso ponlo o apagalo por eso es 0 a 0
+        GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, 0x0);
+        
+        SysCtlDelay(40000000);// luego espera
+    }
+}
+
+
+
+//ejercio ejemplo numero 1 

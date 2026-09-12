@@ -1,0 +1,66 @@
+#include <stdint.h>
+#include <stdbool.h>
+#include "inc/hw_memmap.h"
+#include "driverlib/debug.h"
+#include "driverlib/gpio.h"
+#include "driverlib/sysctl.h"
+
+#ifdef DEBUG
+void
+__error__(char *pcFilename, uint32_t ui32Line)
+{
+    while(1);
+}
+#endif
+
+int
+main(void)
+{
+    // Configuración del reloj a 120 MHz
+    SysCtlClockFreqSet((SYSCTL_XTAL_25MHZ | SYSCTL_OSC_MAIN | SYSCTL_USE_PLL | SYSCTL_CFG_VCO_480), 120000000);
+
+    // Habilita el puerto N y el puerto F
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPION);
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);//habilitamos los puertos en N y F en la misma linea 
+
+    // Espera a que ambos puertos estén listos
+    while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPION))
+    {
+    }
+    while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOF))
+    {
+    }
+
+    // Configura cada pin como salida en su propia línea
+    GPIOPinTypeGPIOOutput(GPIO_PORTN_BASE, GPIO_PIN_0); //habilita los puertos de gpio que necesitamos  
+    GPIOPinTypeGPIOOutput(GPIO_PORTN_BASE, GPIO_PIN_1);
+    GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_0);
+    GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_4);
+
+    while(1)
+    {
+        // 1. Enciende los LEDs PN0 y PF0
+        GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, GPIO_PIN_0); //decimos que el pin 0 del puerto N se encienda y qye vote voltaje 
+        GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_0, GPIO_PIN_0); //decimos que el pin 0 del puerto F se encienda y que vote voltaje 
+        
+        SysCtlDelay(40000000); // Espera 1 segundo //esta es como una configuracion pasada que vimos en embebidos 1 que se usa como un hal delay en sus tiempos mosos 
+
+        // 2. Enciende los LEDs PN1 y PF4 (PN0 y PF0 siguen encendidos)
+        GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, GPIO_PIN_1);
+        GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_4, GPIO_PIN_4);
+        
+        SysCtlDelay(40000000); // Espera 1 segundo
+
+        // 3. Apaga los LEDs PN0 y PF0 (siguiendo el inicio de la secuencia)
+        GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, 0x0);
+        GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_0, 0x0); //decimos que se active el puerto f del pin 0 o  0f y que se apaque por eso 0
+        
+        SysCtlDelay(40000000); // Espera 1 segundo
+
+        // 4. Apaga los LEDs PN1 y PF4 (completando el apagado)
+        GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, 0x0);
+        GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_4, 0x0);
+        
+        SysCtlDelay(40000000); // Espera 1 segundo
+    }
+}

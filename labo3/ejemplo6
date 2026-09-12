@@ -1,0 +1,101 @@
+#include <stdint.h>
+#include <stdbool.h>
+#include "inc/hw_memmap.h"
+#include "driverlib/debug.h"
+#include "driverlib/gpio.h"
+#include "driverlib/sysctl.h"
+
+#ifdef DEBUG
+void
+__error__(char *pcFilename, uint32_t ui32Line)
+{
+    while(1);
+}
+#endif
+
+int
+main(void)
+{
+    // Variable entera requerida para almacenar el valor decimal
+    int counter = 0;
+
+    SysCtlClockFreqSet((SYSCTL_XTAL_25MHZ | SYSCTL_OSC_MAIN | SYSCTL_USE_PLL | SYSCTL_CFG_VCO_480), 120000000);
+
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPION);
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOJ);
+
+    while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPION)) {}
+    while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOF)) {}
+    while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOJ)) {}
+
+    // Configuración de LEDs como salidas
+    GPIOPinTypeGPIOOutput(GPIO_PORTN_BASE, GPIO_PIN_1);
+    GPIOPinTypeGPIOOutput(GPIO_PORTN_BASE, GPIO_PIN_0);
+    GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_4);
+    GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_0);
+
+    // Configuración de Botones como entradas con Pull-Up
+    GPIOPinTypeGPIOInput(GPIO_PORTJ_BASE, GPIO_PIN_0);
+    GPIOPinTypeGPIOInput(GPIO_PORTJ_BASE, GPIO_PIN_1);
+    GPIOPadConfigSet(GPIO_PORTJ_BASE, GPIO_PIN_0, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPU);
+    GPIOPadConfigSet(GPIO_PORTJ_BASE, GPIO_PIN_1, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPU);//entonces aqui decimos que esta en modo pull up entonces todo el tiempo sin presionar estara en 1 y cuando presiones
+    //sera 0 entonces se ralaciona con lo de abajo 
+
+    while(1)
+    {
+        // Botón 1 (PJ0): Aumenta el contador
+        if(GPIOPinRead(GPIO_PORTJ_BASE, GPIO_PIN_0) == 0) //esto esta relacionado con el pull up de arriba entonces mira cuando esta presionado es 0 y cuando esta sin presionar es 1 entonces lo que decimos enciendete caundo 
+        //presiono 
+        {
+            if(counter < 15) {
+                counter = counter + 1;
+            }
+            // Espera a que se suelte el botón
+            while(GPIOPinRead(GPIO_PORTJ_BASE, GPIO_PIN_0) == 0) {} //este era un filtro anti rebote para confirmar que solo se haga una vez me acuerdo que esto no se podia hacer en interrupciones porque colgabampos el
+            //sistema
+            SysCtlDelay(2000000); // Anti-rebote
+        }
+        
+        // Botón 2 (PJ1): Disminuye el contador
+        if(GPIOPinRead(GPIO_PORTJ_BASE, GPIO_PIN_1) == 0)
+        {
+            if(counter > 0) {
+                counter = counter - 1;
+            }
+            // Espera a que se suelte el botón
+            while(GPIOPinRead(GPIO_PORTJ_BASE, GPIO_PIN_1) == 0) {}
+            SysCtlDelay(2000000); // Anti-rebote
+        }
+
+        // Mapeo del valor decimal a binario en los LEDs (Línea por línea)
+        
+        // Bit 0 (Valor 1): LED PF0
+        if(counter & 1) {
+            GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_0, GPIO_PIN_0);
+        } else {
+            GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_0, 0x0);
+        }
+
+        // Bit 1 (Valor 2): LED PF4
+        if(counter & 2) {
+            GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_4, GPIO_PIN_4);
+        } else {
+            GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_4, 0x0);
+        }
+
+        // Bit 2 (Valor 4): LED PN0
+        if(counter & 4) {
+            GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, GPIO_PIN_0);
+        } else {
+            GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, 0x0);
+        }
+
+        // Bit 3 (Valor 8): LED PN1
+        if(counter & 8) {
+            GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, GPIO_PIN_1);
+        } else {
+            GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, 0x0);
+        }
+    }
+}
