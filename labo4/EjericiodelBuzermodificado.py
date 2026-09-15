@@ -6,7 +6,7 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(23, GPIO.OUT)  # Buzzer
 
 GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_UP)  # Boton encender
-GPIO.setup(17, GPIO.IN, pull_up_down=GPIO.PUD_UP)  # Boton apagar
+GPIO.setup(26, GPIO.IN, pull_up_down=GPIO.PUD_UP)  # Boton apagar
 
 buzzer_encendido = False
 
@@ -17,7 +17,7 @@ while True:
         print("Buzzer encendido")
         time.sleep(0.3)
 
-    if GPIO.input(17) == GPIO.LOW:
+    if GPIO.input(26) == GPIO.LOW:
         buzzer_encendido = False
         print("Buzzer apagado")
         time.sleep(0.3)
