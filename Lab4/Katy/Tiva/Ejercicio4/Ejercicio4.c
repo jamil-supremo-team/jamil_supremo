@@ -18,9 +18,11 @@ void timer0A_handler(void)
 {
     TimerIntClear(TIMER0_BASE, TIMER_TIMA_TIMEOUT);
 
-    if(counter < 15)
+    counter++;
+
+    if(counter > 15)
     {
-        counter++;
+        counter = 0;
     }
 
     // Mostrar contador en binario
@@ -100,23 +102,23 @@ int main(void)
 
     while(1)
     {
-        // Si PJ0 esta presionado -> 3 segundos
+        // Si PJ0 está presionado -> 3 segundos
         if(GPIOPinRead(GPIO_PORTJ_BASE, GPIO_PIN_0) == 0)
         {
-            FS = 360000000;
-
-            TimerLoadSet(TIMER0_BASE,
-                         TIMER_A,
-                         FS);
+            if(FS != 360000000)
+            {
+                FS = 360000000;
+                TimerLoadSet(TIMER0_BASE, TIMER_A, FS);
+            }
         }
         else
         {
-            // Sin presionar -> 1,5 segundos
-            FS = 180000000;
-
-            TimerLoadSet(TIMER0_BASE,
-                         TIMER_A,
-                         FS);
+            // Sin presionar -> 1.5 segundos
+            if(FS != 180000000)
+            {
+                FS = 180000000;
+                TimerLoadSet(TIMER0_BASE, TIMER_A, FS);
+            }
         }
     }
 }
