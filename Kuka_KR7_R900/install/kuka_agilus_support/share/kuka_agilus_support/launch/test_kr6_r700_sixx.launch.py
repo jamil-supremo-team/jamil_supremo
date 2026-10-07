@@ -1,0 +1,1 @@
+/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/src/kuka_robot_descriptions/kuka_agilus_support/launch/test_kr6_r700_sixx.launch.py

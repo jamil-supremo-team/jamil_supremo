@@ -1,0 +1,19 @@
+[1.085s] Invoking command in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/src/grupo07_kuka_kr7_kinematics': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=[ROSLAB d43] \u@\h:\w$ PYTHONPATH=/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/grupo07_kuka_kr7_kinematics build --build-base /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_kinematics/build install --record /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_kinematics/install.log --install-scripts $base/lib/grupo07_kuka_kr7_kinematics --single-version-externally-managed install_data
+[1.355s] running egg_info
+[1.374s] writing ../../build/grupo07_kuka_kr7_kinematics/grupo07_kuka_kr7_kinematics.egg-info/PKG-INFO
+[1.374s] writing dependency_links to ../../build/grupo07_kuka_kr7_kinematics/grupo07_kuka_kr7_kinematics.egg-info/dependency_links.txt
+[1.375s] writing requirements to ../../build/grupo07_kuka_kr7_kinematics/grupo07_kuka_kr7_kinematics.egg-info/requires.txt
+[1.375s] writing top-level names to ../../build/grupo07_kuka_kr7_kinematics/grupo07_kuka_kr7_kinematics.egg-info/top_level.txt
+[1.417s] reading manifest file '../../build/grupo07_kuka_kr7_kinematics/grupo07_kuka_kr7_kinematics.egg-info/SOURCES.txt'
+[1.418s] writing manifest file '../../build/grupo07_kuka_kr7_kinematics/grupo07_kuka_kr7_kinematics.egg-info/SOURCES.txt'
+[1.418s] running build
+[1.418s] running build_py
+[1.418s] running install
+[1.423s] running install_lib
+[1.446s] running install_data
+[1.446s] running install_egg_info
+[1.467s] removing '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics/lib/python3.12/site-packages/grupo07_kuka_kr7_kinematics-0.0.0-py3.12.egg-info' (and everything under it)
+[1.468s] Copying ../../build/grupo07_kuka_kr7_kinematics/grupo07_kuka_kr7_kinematics.egg-info to /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics/lib/python3.12/site-packages/grupo07_kuka_kr7_kinematics-0.0.0-py3.12.egg-info
+[1.469s] running install_scripts
+[1.613s] writing list of installed files to '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_kinematics/install.log'
+[1.647s] Invoked command in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/src/grupo07_kuka_kr7_kinematics' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=[ROSLAB d43] \u@\h:\w$ PYTHONPATH=/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/grupo07_kuka_kr7_kinematics build --build-base /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_kinematics/build install --record /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_kinematics/install.log --install-scripts $base/lib/grupo07_kuka_kr7_kinematics --single-version-externally-managed install_data

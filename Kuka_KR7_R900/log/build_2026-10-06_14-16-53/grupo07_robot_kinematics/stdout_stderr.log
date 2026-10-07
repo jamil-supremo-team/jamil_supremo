@@ -1,0 +1,36 @@
+running develop
+Removing /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/python3.12/site-packages/grupo07-robot-kinematics.egg-link (link to .)
+running egg_info
+writing ../../build/grupo07_robot_kinematics/grupo07_robot_kinematics.egg-info/PKG-INFO
+writing dependency_links to ../../build/grupo07_robot_kinematics/grupo07_robot_kinematics.egg-info/dependency_links.txt
+writing entry points to ../../build/grupo07_robot_kinematics/grupo07_robot_kinematics.egg-info/entry_points.txt
+writing requirements to ../../build/grupo07_robot_kinematics/grupo07_robot_kinematics.egg-info/requires.txt
+writing top-level names to ../../build/grupo07_robot_kinematics/grupo07_robot_kinematics.egg-info/top_level.txt
+reading manifest file '../../build/grupo07_robot_kinematics/grupo07_robot_kinematics.egg-info/SOURCES.txt'
+writing manifest file '../../build/grupo07_robot_kinematics/grupo07_robot_kinematics.egg-info/SOURCES.txt'
+running build
+running build_py
+copying grupo07_robot_kinematics/target_gui_node.py -> /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_robot_kinematics/build/lib/grupo07_robot_kinematics
+running install
+running install_lib
+creating /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/python3.12/site-packages/grupo07_robot_kinematics
+copying /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_robot_kinematics/build/lib/grupo07_robot_kinematics/kinematics.py -> /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/python3.12/site-packages/grupo07_robot_kinematics
+copying /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_robot_kinematics/build/lib/grupo07_robot_kinematics/__init__.py -> /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/python3.12/site-packages/grupo07_robot_kinematics
+copying /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_robot_kinematics/build/lib/grupo07_robot_kinematics/target_gui_node.py -> /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/python3.12/site-packages/grupo07_robot_kinematics
+copying /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_robot_kinematics/build/lib/grupo07_robot_kinematics/fk_node.py -> /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/python3.12/site-packages/grupo07_robot_kinematics
+copying /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_robot_kinematics/build/lib/grupo07_robot_kinematics/ik_node.py -> /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/python3.12/site-packages/grupo07_robot_kinematics
+byte-compiling /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/python3.12/site-packages/grupo07_robot_kinematics/kinematics.py to kinematics.cpython-312.pyc
+byte-compiling /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/python3.12/site-packages/grupo07_robot_kinematics/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/python3.12/site-packages/grupo07_robot_kinematics/target_gui_node.py to target_gui_node.cpython-312.pyc
+byte-compiling /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/python3.12/site-packages/grupo07_robot_kinematics/fk_node.py to fk_node.cpython-312.pyc
+byte-compiling /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/python3.12/site-packages/grupo07_robot_kinematics/ik_node.py to ik_node.cpython-312.pyc
+running install_data
+copying resource/grupo07_robot_kinematics -> /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/share/ament_index/resource_index/packages
+copying package.xml -> /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/share/grupo07_robot_kinematics
+running install_egg_info
+Copying ../../build/grupo07_robot_kinematics/grupo07_robot_kinematics.egg-info to /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/python3.12/site-packages/grupo07_robot_kinematics-0.0.0-py3.12.egg-info
+running install_scripts
+Installing fk_node script to /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/grupo07_robot_kinematics
+Installing ik_node script to /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/grupo07_robot_kinematics
+Installing target_gui script to /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/grupo07_robot_kinematics
+writing list of installed files to '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_robot_kinematics/install.log'

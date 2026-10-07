@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+../../build/grupo07_kuka_kr7_kinematics/grupo07_kuka_kr7_kinematics.egg-info/PKG-INFO
+../../build/grupo07_kuka_kr7_kinematics/grupo07_kuka_kr7_kinematics.egg-info/SOURCES.txt
+../../build/grupo07_kuka_kr7_kinematics/grupo07_kuka_kr7_kinematics.egg-info/dependency_links.txt
+../../build/grupo07_kuka_kr7_kinematics/grupo07_kuka_kr7_kinematics.egg-info/requires.txt
+../../build/grupo07_kuka_kr7_kinematics/grupo07_kuka_kr7_kinematics.egg-info/top_level.txt
+../../build/grupo07_kuka_kr7_kinematics/grupo07_kuka_kr7_kinematics.egg-info/zip-safe
+grupo07_kuka_kr7_kinematics/__init__.py
+resource/grupo07_kuka_kr7_kinematics
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

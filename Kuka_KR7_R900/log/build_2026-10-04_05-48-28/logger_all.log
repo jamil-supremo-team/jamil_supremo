@@ -1,0 +1,328 @@
+[0.091s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.091s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x75625a752510>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x75625a8ca7e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x75625a8ca7e0>>, mixin_verb=('build',))
+[0.123s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.123s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.123s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.123s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.123s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.124s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.124s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/grupo07_kuka_kr7_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/grupo07_kuka_kr7_bringup) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/grupo07_kuka_kr7_bringup) by extension 'ignore_ament_install'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/grupo07_kuka_kr7_bringup) by extensions ['colcon_pkg']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/grupo07_kuka_kr7_bringup) by extension 'colcon_pkg'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/grupo07_kuka_kr7_bringup) by extensions ['colcon_meta']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/grupo07_kuka_kr7_bringup) by extension 'colcon_meta'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/grupo07_kuka_kr7_bringup) by extensions ['ros']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/grupo07_kuka_kr7_bringup) by extension 'ros'
+[0.148s] DEBUG:colcon.colcon_core.package_identification:Package 'src/grupo07_kuka_kr7_bringup' with type 'ros.ament_cmake' and name 'grupo07_kuka_kr7_bringup'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/grupo07_kuka_kr7_kinematics) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/grupo07_kuka_kr7_kinematics) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/grupo07_kuka_kr7_kinematics) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/grupo07_kuka_kr7_kinematics) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/grupo07_kuka_kr7_kinematics) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/grupo07_kuka_kr7_kinematics) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/grupo07_kuka_kr7_kinematics) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/grupo07_kuka_kr7_kinematics) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/grupo07_kuka_kr7_kinematics) by extension 'ros'
+[0.149s] DEBUG:colcon.colcon_core.package_identification:Package 'src/grupo07_kuka_kr7_kinematics' with type 'ros.ament_python' and name 'grupo07_kuka_kr7_kinematics'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions) by extension 'ignore_ament_install'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions) by extensions ['colcon_pkg']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions) by extension 'colcon_pkg'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions) by extensions ['colcon_meta']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions) by extension 'colcon_meta'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions) by extensions ['ros']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions) by extension 'ros'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions) by extensions ['cmake', 'python']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions) by extension 'cmake'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions) by extension 'python'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions) by extensions ['python_setup_py']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions) by extension 'python_setup_py'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions/kuka_agilus_support) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions/kuka_agilus_support) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions/kuka_agilus_support) by extension 'ignore_ament_install'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions/kuka_agilus_support) by extensions ['colcon_pkg']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions/kuka_agilus_support) by extension 'colcon_pkg'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions/kuka_agilus_support) by extensions ['colcon_meta']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions/kuka_agilus_support) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions/kuka_agilus_support) by extensions ['ros']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions/kuka_agilus_support) by extension 'ros'
+[0.150s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kuka_robot_descriptions/kuka_agilus_support' with type 'ros.ament_cmake' and name 'kuka_agilus_support'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions/kuka_resources) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions/kuka_resources) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions/kuka_resources) by extension 'ignore_ament_install'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions/kuka_resources) by extensions ['colcon_pkg']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions/kuka_resources) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions/kuka_resources) by extensions ['colcon_meta']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions/kuka_resources) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions/kuka_resources) by extensions ['ros']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/kuka_robot_descriptions/kuka_resources) by extension 'ros'
+[0.151s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kuka_robot_descriptions/kuka_resources' with type 'ros.ament_cmake' and name 'kuka_resources'
+[0.151s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.151s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.151s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.151s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.151s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.168s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install
+[0.170s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 493 installed packages in /opt/ros/jazzy
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.225s] Level 5:colcon.colcon_core.verb:set package 'grupo07_kuka_kr7_kinematics' build argument 'cmake_args' from command line to 'None'
+[0.225s] Level 5:colcon.colcon_core.verb:set package 'grupo07_kuka_kr7_kinematics' build argument 'cmake_target' from command line to 'None'
+[0.225s] Level 5:colcon.colcon_core.verb:set package 'grupo07_kuka_kr7_kinematics' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.225s] Level 5:colcon.colcon_core.verb:set package 'grupo07_kuka_kr7_kinematics' build argument 'cmake_clean_cache' from command line to 'False'
+[0.225s] Level 5:colcon.colcon_core.verb:set package 'grupo07_kuka_kr7_kinematics' build argument 'cmake_clean_first' from command line to 'False'
+[0.225s] Level 5:colcon.colcon_core.verb:set package 'grupo07_kuka_kr7_kinematics' build argument 'cmake_force_configure' from command line to 'False'
+[0.225s] Level 5:colcon.colcon_core.verb:set package 'grupo07_kuka_kr7_kinematics' build argument 'ament_cmake_args' from command line to 'None'
+[0.225s] Level 5:colcon.colcon_core.verb:set package 'grupo07_kuka_kr7_kinematics' build argument 'catkin_cmake_args' from command line to 'None'
+[0.225s] Level 5:colcon.colcon_core.verb:set package 'grupo07_kuka_kr7_kinematics' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.225s] DEBUG:colcon.colcon_core.verb:Building package 'grupo07_kuka_kr7_kinematics' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_kinematics', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics', 'merge_install': False, 'path': '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/src/grupo07_kuka_kr7_kinematics', 'symlink_install': False, 'test_result_base': None}
+[0.225s] Level 5:colcon.colcon_core.verb:set package 'kuka_resources' build argument 'cmake_args' from command line to 'None'
+[0.225s] Level 5:colcon.colcon_core.verb:set package 'kuka_resources' build argument 'cmake_target' from command line to 'None'
+[0.225s] Level 5:colcon.colcon_core.verb:set package 'kuka_resources' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.225s] Level 5:colcon.colcon_core.verb:set package 'kuka_resources' build argument 'cmake_clean_cache' from command line to 'False'
+[0.225s] Level 5:colcon.colcon_core.verb:set package 'kuka_resources' build argument 'cmake_clean_first' from command line to 'False'
+[0.225s] Level 5:colcon.colcon_core.verb:set package 'kuka_resources' build argument 'cmake_force_configure' from command line to 'False'
+[0.225s] Level 5:colcon.colcon_core.verb:set package 'kuka_resources' build argument 'ament_cmake_args' from command line to 'None'
+[0.225s] Level 5:colcon.colcon_core.verb:set package 'kuka_resources' build argument 'catkin_cmake_args' from command line to 'None'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'kuka_resources' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.226s] DEBUG:colcon.colcon_core.verb:Building package 'kuka_resources' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_resources', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources', 'merge_install': False, 'path': '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/src/kuka_robot_descriptions/kuka_resources', 'symlink_install': False, 'test_result_base': None}
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'kuka_agilus_support' build argument 'cmake_args' from command line to 'None'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'kuka_agilus_support' build argument 'cmake_target' from command line to 'None'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'kuka_agilus_support' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'kuka_agilus_support' build argument 'cmake_clean_cache' from command line to 'False'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'kuka_agilus_support' build argument 'cmake_clean_first' from command line to 'False'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'kuka_agilus_support' build argument 'cmake_force_configure' from command line to 'False'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'kuka_agilus_support' build argument 'ament_cmake_args' from command line to 'None'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'kuka_agilus_support' build argument 'catkin_cmake_args' from command line to 'None'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'kuka_agilus_support' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.226s] DEBUG:colcon.colcon_core.verb:Building package 'kuka_agilus_support' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_agilus_support', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support', 'merge_install': False, 'path': '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/src/kuka_robot_descriptions/kuka_agilus_support', 'symlink_install': False, 'test_result_base': None}
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'grupo07_kuka_kr7_bringup' build argument 'cmake_args' from command line to 'None'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'grupo07_kuka_kr7_bringup' build argument 'cmake_target' from command line to 'None'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'grupo07_kuka_kr7_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'grupo07_kuka_kr7_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'grupo07_kuka_kr7_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'grupo07_kuka_kr7_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'grupo07_kuka_kr7_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'grupo07_kuka_kr7_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'grupo07_kuka_kr7_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.226s] DEBUG:colcon.colcon_core.verb:Building package 'grupo07_kuka_kr7_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup', 'merge_install': False, 'path': '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/src/grupo07_kuka_kr7_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.226s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.227s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.227s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/src/kuka_robot_descriptions/kuka_resources' with build type 'ament_cmake'
+[0.227s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/src/kuka_robot_descriptions/kuka_resources'
+[0.229s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.230s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.230s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.234s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/src/grupo07_kuka_kr7_kinematics' with build type 'ament_python'
+[0.234s] Level 1:colcon.colcon_core.shell:create_environment_hook('grupo07_kuka_kr7_kinematics', 'ament_prefix_path')
+[0.234s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics/share/grupo07_kuka_kr7_kinematics/hook/ament_prefix_path.ps1'
+[0.235s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics/share/grupo07_kuka_kr7_kinematics/hook/ament_prefix_path.dsv'
+[0.235s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics/share/grupo07_kuka_kr7_kinematics/hook/ament_prefix_path.sh'
+[0.235s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.235s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.255s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_resources': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e[1;32m\]\u@\h:\w\$\[\e[0m\] /usr/bin/cmake --build /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_resources -- -j16 -l16
+[0.447s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/src/grupo07_kuka_kr7_kinematics'
+[0.447s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.447s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.452s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_resources' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e[1;32m\]\u@\h:\w\$\[\e[0m\] /usr/bin/cmake --build /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_resources -- -j16 -l16
+[0.462s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_resources': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e[1;32m\]\u@\h:\w\$\[\e[0m\] /usr/bin/cmake --install /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_resources
+[0.489s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kuka_resources)
+[0.490s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_resources' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e[1;32m\]\u@\h:\w\$\[\e[0m\] /usr/bin/cmake --install /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_resources
+[0.492s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources' for CMake module files
+[0.492s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources' for CMake config files
+[0.492s] Level 1:colcon.colcon_core.shell:create_environment_hook('kuka_resources', 'cmake_prefix_path')
+[0.492s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources/share/kuka_resources/hook/cmake_prefix_path.ps1'
+[0.493s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources/share/kuka_resources/hook/cmake_prefix_path.dsv'
+[0.493s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources/share/kuka_resources/hook/cmake_prefix_path.sh'
+[0.494s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources/bin'
+[0.494s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources/lib/pkgconfig/kuka_resources.pc'
+[0.494s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources/lib/python3.12/site-packages'
+[0.494s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources/bin'
+[0.494s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources/share/kuka_resources/package.ps1'
+[0.495s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources/share/kuka_resources/package.dsv'
+[0.495s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources/share/kuka_resources/package.sh'
+[0.496s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources/share/kuka_resources/package.bash'
+[0.496s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources/share/kuka_resources/package.zsh'
+[0.497s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources/share/colcon-core/packages/kuka_resources)
+[0.497s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kuka_resources)
+[0.498s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources' for CMake module files
+[0.498s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources' for CMake config files
+[0.498s] Level 1:colcon.colcon_core.shell:create_environment_hook('kuka_resources', 'cmake_prefix_path')
+[0.499s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources/share/kuka_resources/hook/cmake_prefix_path.ps1'
+[0.499s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources/share/kuka_resources/hook/cmake_prefix_path.dsv'
+[0.499s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources/share/kuka_resources/hook/cmake_prefix_path.sh'
+[0.500s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources/bin'
+[0.500s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources/lib/pkgconfig/kuka_resources.pc'
+[0.500s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources/lib/python3.12/site-packages'
+[0.500s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources/bin'
+[0.500s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources/share/kuka_resources/package.ps1'
+[0.501s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources/share/kuka_resources/package.dsv'
+[0.501s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources/share/kuka_resources/package.sh'
+[0.501s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources/share/kuka_resources/package.bash'
+[0.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources/share/kuka_resources/package.zsh'
+[0.502s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources/share/colcon-core/packages/kuka_resources)
+[0.502s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/src/kuka_robot_descriptions/kuka_agilus_support' with build type 'ament_cmake'
+[0.502s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/src/kuka_robot_descriptions/kuka_agilus_support'
+[0.503s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.503s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.512s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_agilus_support': CMAKE_PREFIX_PATH=/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e[1;32m\]\u@\h:\w\$\[\e[0m\] /usr/bin/cmake --build /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_agilus_support -- -j16 -l16
+[0.558s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_agilus_support' returned '0': CMAKE_PREFIX_PATH=/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e[1;32m\]\u@\h:\w\$\[\e[0m\] /usr/bin/cmake --build /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_agilus_support -- -j16 -l16
+[0.559s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_agilus_support': CMAKE_PREFIX_PATH=/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e[1;32m\]\u@\h:\w\$\[\e[0m\] /usr/bin/cmake --install /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_agilus_support
+[0.614s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kuka_agilus_support)
+[0.614s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support' for CMake module files
+[0.615s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_agilus_support' returned '0': CMAKE_PREFIX_PATH=/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e[1;32m\]\u@\h:\w\$\[\e[0m\] /usr/bin/cmake --install /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_agilus_support
+[0.615s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support' for CMake config files
+[0.615s] Level 1:colcon.colcon_core.shell:create_environment_hook('kuka_agilus_support', 'cmake_prefix_path')
+[0.616s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support/share/kuka_agilus_support/hook/cmake_prefix_path.ps1'
+[0.616s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support/share/kuka_agilus_support/hook/cmake_prefix_path.dsv'
+[0.616s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support/share/kuka_agilus_support/hook/cmake_prefix_path.sh'
+[0.617s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support/bin'
+[0.617s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support/lib/pkgconfig/kuka_agilus_support.pc'
+[0.617s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support/lib/python3.12/site-packages'
+[0.617s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support/bin'
+[0.617s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support/share/kuka_agilus_support/package.ps1'
+[0.618s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support/share/kuka_agilus_support/package.dsv'
+[0.618s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support/share/kuka_agilus_support/package.sh'
+[0.618s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support/share/kuka_agilus_support/package.bash'
+[0.619s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support/share/kuka_agilus_support/package.zsh'
+[0.619s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support/share/colcon-core/packages/kuka_agilus_support)
+[0.619s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kuka_agilus_support)
+[0.619s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support' for CMake module files
+[0.620s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support' for CMake config files
+[0.620s] Level 1:colcon.colcon_core.shell:create_environment_hook('kuka_agilus_support', 'cmake_prefix_path')
+[0.620s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support/share/kuka_agilus_support/hook/cmake_prefix_path.ps1'
+[0.621s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support/share/kuka_agilus_support/hook/cmake_prefix_path.dsv'
+[0.621s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support/share/kuka_agilus_support/hook/cmake_prefix_path.sh'
+[0.621s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support/bin'
+[0.621s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support/lib/pkgconfig/kuka_agilus_support.pc'
+[0.621s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support/lib/python3.12/site-packages'
+[0.622s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support/bin'
+[0.622s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support/share/kuka_agilus_support/package.ps1'
+[0.622s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support/share/kuka_agilus_support/package.dsv'
+[0.623s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support/share/kuka_agilus_support/package.sh'
+[0.623s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support/share/kuka_agilus_support/package.bash'
+[0.623s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support/share/kuka_agilus_support/package.zsh'
+[0.624s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support/share/colcon-core/packages/kuka_agilus_support)
+[0.624s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/src/grupo07_kuka_kr7_bringup' with build type 'ament_cmake'
+[0.624s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/src/grupo07_kuka_kr7_bringup'
+[0.624s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.624s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.636s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_bringup': CMAKE_PREFIX_PATH=/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e[1;32m\]\u@\h:\w\$\[\e[0m\] /usr/bin/cmake --build /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_bringup -- -j16 -l16
+[0.680s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_bringup' returned '0': CMAKE_PREFIX_PATH=/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e[1;32m\]\u@\h:\w\$\[\e[0m\] /usr/bin/cmake --build /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_bringup -- -j16 -l16
+[0.681s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_bringup': CMAKE_PREFIX_PATH=/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e[1;32m\]\u@\h:\w\$\[\e[0m\] /usr/bin/cmake --install /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_bringup
+[0.705s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(grupo07_kuka_kr7_bringup)
+[0.706s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup' for CMake module files
+[0.706s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_bringup' returned '0': CMAKE_PREFIX_PATH=/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_agilus_support:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/kuka_resources:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e[1;32m\]\u@\h:\w\$\[\e[0m\] /usr/bin/cmake --install /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_bringup
+[0.706s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup' for CMake config files
+[0.706s] Level 1:colcon.colcon_core.shell:create_environment_hook('grupo07_kuka_kr7_bringup', 'cmake_prefix_path')
+[0.707s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup/share/grupo07_kuka_kr7_bringup/hook/cmake_prefix_path.ps1'
+[0.707s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup/share/grupo07_kuka_kr7_bringup/hook/cmake_prefix_path.dsv'
+[0.707s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup/share/grupo07_kuka_kr7_bringup/hook/cmake_prefix_path.sh'
+[0.708s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup/bin'
+[0.708s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup/lib/pkgconfig/grupo07_kuka_kr7_bringup.pc'
+[0.708s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup/lib/python3.12/site-packages'
+[0.709s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup/bin'
+[0.709s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup/share/grupo07_kuka_kr7_bringup/package.ps1'
+[0.709s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup/share/grupo07_kuka_kr7_bringup/package.dsv'
+[0.709s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup/share/grupo07_kuka_kr7_bringup/package.sh'
+[0.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup/share/grupo07_kuka_kr7_bringup/package.bash'
+[0.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup/share/grupo07_kuka_kr7_bringup/package.zsh'
+[0.710s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup/share/colcon-core/packages/grupo07_kuka_kr7_bringup)
+[0.711s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(grupo07_kuka_kr7_bringup)
+[0.711s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup' for CMake module files
+[0.711s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup' for CMake config files
+[0.712s] Level 1:colcon.colcon_core.shell:create_environment_hook('grupo07_kuka_kr7_bringup', 'cmake_prefix_path')
+[0.712s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup/share/grupo07_kuka_kr7_bringup/hook/cmake_prefix_path.ps1'
+[0.712s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup/share/grupo07_kuka_kr7_bringup/hook/cmake_prefix_path.dsv'
+[0.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup/share/grupo07_kuka_kr7_bringup/hook/cmake_prefix_path.sh'
+[0.713s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup/bin'
+[0.713s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup/lib/pkgconfig/grupo07_kuka_kr7_bringup.pc'
+[0.713s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup/lib/python3.12/site-packages'
+[0.713s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup/bin'
+[0.714s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup/share/grupo07_kuka_kr7_bringup/package.ps1'
+[0.714s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup/share/grupo07_kuka_kr7_bringup/package.dsv'
+[0.714s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup/share/grupo07_kuka_kr7_bringup/package.sh'
+[0.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup/share/grupo07_kuka_kr7_bringup/package.bash'
+[0.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup/share/grupo07_kuka_kr7_bringup/package.zsh'
+[0.715s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_bringup/share/colcon-core/packages/grupo07_kuka_kr7_bringup)
+[1.030s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: build_py, clean, bdist_dumb, build_clib, build, easy_install, test, install_data, install_headers, egg_info, build_ext, symlink_data, alias, build_scripts, install_scripts, rotate, bdist_egg, dist_info, install, register, init_catalog, install_egg_info, extract_messages, bdist_rpm, check, sdist, develop, bdist, upload, editable_wheel, compile_catalog, setopt, upload_docs, update_catalog, install_lib, bdist_wheel, saveopts
+[1.032s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/src/grupo07_kuka_kr7_kinematics': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e[1;32m\]\u@\h:\w\$\[\e[0m\] PYTHONPATH=/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/grupo07_kuka_kr7_kinematics build --build-base /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_kinematics/build install --record /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_kinematics/install.log --install-scripts $base/lib/grupo07_kuka_kr7_kinematics --single-version-externally-managed install_data
+[1.533s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics' for CMake module files
+[1.534s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/src/grupo07_kuka_kr7_kinematics' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e[1;32m\]\u@\h:\w\$\[\e[0m\] PYTHONPATH=/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/grupo07_kuka_kr7_kinematics build --build-base /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_kinematics/build install --record /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_kinematics/install.log --install-scripts $base/lib/grupo07_kuka_kr7_kinematics --single-version-externally-managed install_data
+[1.534s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics' for CMake config files
+[1.534s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics/lib'
+[1.534s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics/bin'
+[1.535s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics/lib/pkgconfig/grupo07_kuka_kr7_kinematics.pc'
+[1.535s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics/lib/python3.12/site-packages'
+[1.535s] Level 1:colcon.colcon_core.shell:create_environment_hook('grupo07_kuka_kr7_kinematics', 'pythonpath')
+[1.535s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics/share/grupo07_kuka_kr7_kinematics/hook/pythonpath.ps1'
+[1.535s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics/share/grupo07_kuka_kr7_kinematics/hook/pythonpath.dsv'
+[1.536s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics/share/grupo07_kuka_kr7_kinematics/hook/pythonpath.sh'
+[1.536s] Level 1:colcon.colcon_core.environment:checking '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics/bin'
+[1.536s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(grupo07_kuka_kr7_kinematics)
+[1.536s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics/share/grupo07_kuka_kr7_kinematics/package.ps1'
+[1.537s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics/share/grupo07_kuka_kr7_kinematics/package.dsv'
+[1.537s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics/share/grupo07_kuka_kr7_kinematics/package.sh'
+[1.537s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics/share/grupo07_kuka_kr7_kinematics/package.bash'
+[1.538s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics/share/grupo07_kuka_kr7_kinematics/package.zsh'
+[1.538s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_kuka_kr7_kinematics/share/colcon-core/packages/grupo07_kuka_kr7_kinematics)
+[1.538s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.539s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.539s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.539s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.544s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.544s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.544s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.556s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.557s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/local_setup.ps1'
+[1.557s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/_local_setup_util_ps1.py'
+[1.558s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/setup.ps1'
+[1.559s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/local_setup.sh'
+[1.560s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/_local_setup_util_sh.py'
+[1.560s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/setup.sh'
+[1.561s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/local_setup.bash'
+[1.561s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/setup.bash'
+[1.562s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/local_setup.zsh'
+[1.563s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/setup.zsh'

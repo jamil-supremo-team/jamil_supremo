@@ -1,0 +1,20 @@
+[1.181s] Invoking command in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_robot_kinematics': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=[ROSLAB d43] \u@\h:\w$ PYTHONPATH=/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_robot_kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_robot_kinematics/build --no-deps symlink_data --force
+[1.509s] running develop
+[1.720s] running egg_info
+[1.741s] writing grupo07_robot_kinematics.egg-info/PKG-INFO
+[1.741s] writing dependency_links to grupo07_robot_kinematics.egg-info/dependency_links.txt
+[1.741s] writing entry points to grupo07_robot_kinematics.egg-info/entry_points.txt
+[1.741s] writing requirements to grupo07_robot_kinematics.egg-info/requires.txt
+[1.741s] writing top-level names to grupo07_robot_kinematics.egg-info/top_level.txt
+[1.782s] reading manifest file 'grupo07_robot_kinematics.egg-info/SOURCES.txt'
+[1.782s] writing manifest file 'grupo07_robot_kinematics.egg-info/SOURCES.txt'
+[1.804s] running build_ext
+[1.804s] Creating /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/python3.12/site-packages/grupo07-robot-kinematics.egg-link (link to .)
+[1.805s] Installing fk_node script to /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/grupo07_robot_kinematics
+[1.805s] Installing ik_node script to /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/grupo07_robot_kinematics
+[1.805s] 
+[1.805s] Installed /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_robot_kinematics
+[1.806s] running symlink_data
+[1.806s] symbolically linking /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_robot_kinematics/resource/grupo07_robot_kinematics -> /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/share/ament_index/resource_index/packages
+[1.806s] symbolically linking /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_robot_kinematics/package.xml -> /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/share/grupo07_robot_kinematics
+[1.839s] Invoked command in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_robot_kinematics' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=[ROSLAB d43] \u@\h:\w$ PYTHONPATH=/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_robot_kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_robot_kinematics/build --no-deps symlink_data --force

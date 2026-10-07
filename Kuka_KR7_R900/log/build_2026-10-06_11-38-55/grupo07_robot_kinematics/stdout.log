@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing grupo07_robot_kinematics.egg-info/PKG-INFO
+writing dependency_links to grupo07_robot_kinematics.egg-info/dependency_links.txt
+writing entry points to grupo07_robot_kinematics.egg-info/entry_points.txt
+writing requirements to grupo07_robot_kinematics.egg-info/requires.txt
+writing top-level names to grupo07_robot_kinematics.egg-info/top_level.txt
+reading manifest file 'grupo07_robot_kinematics.egg-info/SOURCES.txt'
+writing manifest file 'grupo07_robot_kinematics.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/python3.12/site-packages/grupo07-robot-kinematics.egg-link (link to .)
+Installing fk_node script to /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/grupo07_robot_kinematics
+Installing ik_node script to /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/grupo07_robot_kinematics
+
+Installed /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_robot_kinematics
+running symlink_data

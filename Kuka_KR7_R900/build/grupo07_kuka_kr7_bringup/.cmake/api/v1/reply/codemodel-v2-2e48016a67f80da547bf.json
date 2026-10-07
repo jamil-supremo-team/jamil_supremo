@@ -1,0 +1,70 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-166cc425c693ba33cf03.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "grupo07_kuka_kr7_bringup",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "grupo07_kuka_kr7_bringup_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-grupo07_kuka_kr7_bringup_uninstall-3b9f2a40cc5ccc2e1705.json",
+					"name" : "grupo07_kuka_kr7_bringup_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-fb3e6d407fcb4a373002.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_bringup",
+		"source" : "/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/src/grupo07_kuka_kr7_bringup"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,23 @@
+[1.073s] Invoking command in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/src/grupo07_robot_kinematics': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=[ROSLAB d43] \u@\h:\w$ PYTHONPATH=/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_robot_kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/grupo07_robot_kinematics build --build-base /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_robot_kinematics/build install --record /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_robot_kinematics/install.log --install-scripts $base/lib/grupo07_robot_kinematics --single-version-externally-managed install_data
+[1.337s] running egg_info
+[1.357s] writing ../../build/grupo07_robot_kinematics/grupo07_robot_kinematics.egg-info/PKG-INFO
+[1.358s] writing dependency_links to ../../build/grupo07_robot_kinematics/grupo07_robot_kinematics.egg-info/dependency_links.txt
+[1.358s] writing entry points to ../../build/grupo07_robot_kinematics/grupo07_robot_kinematics.egg-info/entry_points.txt
+[1.358s] writing requirements to ../../build/grupo07_robot_kinematics/grupo07_robot_kinematics.egg-info/requires.txt
+[1.358s] writing top-level names to ../../build/grupo07_robot_kinematics/grupo07_robot_kinematics.egg-info/top_level.txt
+[1.400s] reading manifest file '../../build/grupo07_robot_kinematics/grupo07_robot_kinematics.egg-info/SOURCES.txt'
+[1.401s] writing manifest file '../../build/grupo07_robot_kinematics/grupo07_robot_kinematics.egg-info/SOURCES.txt'
+[1.401s] running build
+[1.401s] running build_py
+[1.401s] running install
+[1.407s] running install_lib
+[1.428s] running install_data
+[1.429s] running install_egg_info
+[1.451s] removing '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/python3.12/site-packages/grupo07_robot_kinematics-0.0.0-py3.12.egg-info' (and everything under it)
+[1.451s] Copying ../../build/grupo07_robot_kinematics/grupo07_robot_kinematics.egg-info to /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/python3.12/site-packages/grupo07_robot_kinematics-0.0.0-py3.12.egg-info
+[1.453s] running install_scripts
+[1.596s] Installing fk_node script to /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/grupo07_robot_kinematics
+[1.596s] Installing ik_node script to /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/grupo07_robot_kinematics
+[1.596s] Installing target_gui script to /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/grupo07_robot_kinematics
+[1.596s] writing list of installed files to '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_robot_kinematics/install.log'
+[1.631s] Invoked command in '/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/src/grupo07_robot_kinematics' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=[ROSLAB d43] \u@\h:\w$ PYTHONPATH=/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_robot_kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/install/grupo07_robot_kinematics/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/grupo07_robot_kinematics build --build-base /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_robot_kinematics/build install --record /home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_robot_kinematics/install.log --install-scripts $base/lib/grupo07_robot_kinematics --single-version-externally-managed install_data

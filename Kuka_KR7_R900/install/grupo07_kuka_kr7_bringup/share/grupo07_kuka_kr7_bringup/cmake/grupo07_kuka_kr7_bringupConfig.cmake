@@ -1,0 +1,1 @@
+/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_bringup/ament_cmake_core/grupo07_kuka_kr7_bringupConfig.cmake
