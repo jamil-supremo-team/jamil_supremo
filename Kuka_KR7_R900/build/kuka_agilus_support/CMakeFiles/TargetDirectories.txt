@@ -1,9 +1,0 @@
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_agilus_support/CMakeFiles/uninstall.dir
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_agilus_support/CMakeFiles/kuka_agilus_support_uninstall.dir
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_agilus_support/CMakeFiles/test.dir
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_agilus_support/CMakeFiles/edit_cache.dir
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_agilus_support/CMakeFiles/rebuild_cache.dir
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_agilus_support/CMakeFiles/list_install_components.dir
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_agilus_support/CMakeFiles/install.dir
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_agilus_support/CMakeFiles/install/local.dir
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_agilus_support/CMakeFiles/install/strip.dir

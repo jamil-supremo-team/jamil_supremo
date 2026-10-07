@@ -1,4 +1,0 @@
-[console_scripts]
-fk_node = grupo07_robot_kinematics.fk_node:main
-ik_node = grupo07_robot_kinematics.ik_node:main
-target_gui = grupo07_robot_kinematics.target_gui_node:main

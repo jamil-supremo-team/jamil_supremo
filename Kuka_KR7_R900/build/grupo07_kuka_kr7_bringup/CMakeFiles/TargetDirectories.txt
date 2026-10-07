@@ -1,9 +1,0 @@
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_bringup/CMakeFiles/uninstall.dir
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_bringup/CMakeFiles/grupo07_kuka_kr7_bringup_uninstall.dir
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_bringup/CMakeFiles/test.dir
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_bringup/CMakeFiles/edit_cache.dir
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_bringup/CMakeFiles/rebuild_cache.dir
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_bringup/CMakeFiles/list_install_components.dir
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_bringup/CMakeFiles/install.dir
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_bringup/CMakeFiles/install/local.dir
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/grupo07_kuka_kr7_bringup/CMakeFiles/install/strip.dir

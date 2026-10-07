@@ -1,9 +1,0 @@
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_resources/CMakeFiles/uninstall.dir
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_resources/CMakeFiles/kuka_resources_uninstall.dir
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_resources/CMakeFiles/test.dir
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_resources/CMakeFiles/edit_cache.dir
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_resources/CMakeFiles/rebuild_cache.dir
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_resources/CMakeFiles/list_install_components.dir
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_resources/CMakeFiles/install.dir
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_resources/CMakeFiles/install/local.dir
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_resources/CMakeFiles/install/strip.dir

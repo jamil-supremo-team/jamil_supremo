@@ -1,1 +1,0 @@
-/home/alex/Desktop/Robot/grupo_07_kuka_kr7_r900_3_ws/build/kuka_agilus_support/ament_cmake_environment_hooks/local_setup.zsh
